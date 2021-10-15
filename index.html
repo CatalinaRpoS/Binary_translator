@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor Decimal → Binario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="converter.js"></script>
+    <link  rel="icon" href="Images/calculator.png" />
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand"><img src="Images/calculator.png" width="70" height="70" class="d-inline-block align-top" alt="Icono" loading="lazy"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active font-weight-bold" href="#Traductor">Traductor</a>
+                <a class="nav-item nav-link active font-weight-bold" href="#Creditos">Créditos</a>
+                <a class="nav-item nav-link active font-weight-bold" href="#Autores">Acerca de los Autores</a>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/banner.jpg" class="d-block w-100" style="width: 100%; height: auto;"alt="Club-de-lectura" >
+              </div>
+            </div>
+    </section>
+    <br/>
+        <section class="container" id="Traductor">
+            <div class="card mb-3" style="max-width: 1500px;" >
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="Images/binary.png" class="card-img" alt="Instrucciones">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body" id="center">
+                      <h1 class="card-title">Traductor Decimal → Binario</h1>
+                      <p class="card-text align-items-center">
+                        <form>
+                        <div class="row">
+                        <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <label >Primer Número</label>
+                            <input type="text" class="form-control" id="num1">
+                            </div>
+                            <div class="form-group col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                <label>Resultado</label>
+                                <p class="output"><output id="result"></output></p>
+                              </div> 
+                            </div>
+                            <button type="button" class="btn" onclick="convert()">Traducir</button>
+                        </div>
+                    </form></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </section>
+    <br/>
+    <br/>
+        <section class="container" id="Creditos">
+                  <h2>Créditos</h2>
+                  <p>Las siguientes fuentes de información fueron de vital importancia en la realización de este Traductor Decimal → Binario, y les damos nuestro agradecimiento:
+                    <ul>
+                        <li>Método de conversión aprendido en <a href="https://www.youtube.com/watch?v=RT89h-oko70" title="Pasos por ingeniería" class="link">Pasos por ingeniería</a></li>
+                        <li>Iconos diseñados por <a href="https://www.freepik.com" title="Freepik" class="link">Freepik</a> desde <a href="https://www.flaticon.es/" class="link" title="Flaticon">www.flaticon.es</a></li>
+                        <li>Banner diseñado <a href="http://wallpaperswide.com/numbers_2-wallpapers.html" class="link" title="Wallpaper Wide">Wallpaper Wide</a> </li>    
+                    </ul></p>
+       </section>
+       <br/>
+    </main>
+
+    <footer class="footer" id="Autores">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    <br/>
+                    <p class="font-weight-bold">Catalina Restrepo Salgado</p>
+                    <p class="font-weight-bold">Jerónimo Ledesma Patiño</p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                  <br/>
+                  <p class="font-weight-bold">Matemáticas Discretas | 2021</p>
+                  <p class="font-weight-bold">Universidad Nacional de Colombia Sede Medellín</p>
+                  <br/>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
