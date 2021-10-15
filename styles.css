@@ -33,7 +33,8 @@ h1, h2{
 }
 
 .output{
-    height: 6vh;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
     padding: .375rem .75rem;
     background-color: #FFF;
     border-radius: 17px;
